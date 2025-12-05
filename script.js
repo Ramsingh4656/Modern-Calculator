@@ -91,7 +91,14 @@ class Calculator {
     }
 }
 
+// Initialize calculator
 const calculator = new Calculator();
+
+// Ensure display is updated on load
+window.addEventListener('DOMContentLoaded', () => {
+    calculator.updateDisplay();
+    console.log('Calculator initialized successfully');
+});
 
 // Keyboard support
 document.addEventListener('keydown', (e) => {
